@@ -1,0 +1,135 @@
+$btn-color : #28a745;
+$font-style :'Shippori Mincho B1', serif;
+*{margin: 0; padding: 0;}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: $font-style;
+    color: #F7A50C;
+}
+h2{
+    font-family: 'Shippori Mincho B1', serif;
+    color: #130086;
+}
+p{
+    letter-spacing: 0.6px;
+    line-height: 25px;
+}
+.header-banner-main{
+    background-color: #14008A;
+    color: white;
+    
+    
+}
+.circle-menu{
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    clip-path: circle();
+    position: absolute;
+    top: -890px;
+    right: 0;
+    display: none;
+}
+.btn-style{
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: $btn-color;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-link{
+    color: #F7A50C!important;
+    margin: 0 20px;
+    font-weight: 900 !important;
+    &:hover{
+    opacity: 0.8;
+    }
+}
+.banner-main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 46px 0;
+}
+.banner-content{
+    margin-top: 0;
+}
+.banner-Img{
+    margin-top: 50px;
+}
+.banner-radius{
+    height: 350px;
+    background-color: #14008A;
+    clip-path: polygon(100% 0, 100% 50%, 86% 59%, 71% 66%, 54% 66%, 36% 58%, 22% 45%, 14% 32%, 6% 17%, 0 0);
+    display: none;
+}
+.investor-main{
+    padding: 0 20px;
+}
+.wrap-order{
+    order: 2;
+}
+.wrap-order-img{
+    order: 1;
+}
+.form-control{
+    font-size: 15px;
+}
+.footer-form{
+    text-align: center;
+    padding: 30px 25px;
+}
+
+.footer-map{
+    padding: 0;
+}
+    
+    /* Medium devices (tablets, 768px and up) */
+                                                                                                
+        @media (min-width: 768px) {
+            
+        }
+    /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            .nav-link{
+                color: black!important;
+            }
+            .banner-content{
+                text-align: left;
+            }
+            .banner-content{
+                margin-top: 180px;
+            }
+            .banner-Img{
+                margin-top: 50px;
+            }
+            .footer-form{
+                text-align: left;
+                padding: 0;
+            }
+            
+            .investor-main{
+                padding: 100px 20px;
+            }
+            .wrap-order{
+                order: 1;
+            }
+            .wrap-order-img{
+                order: 2;
+            }
+            .circle-menu{
+                display: block;
+            }
+            .banner-radius{
+                display: block;
+            }
+            
+        }
+    /* Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            
+        }
